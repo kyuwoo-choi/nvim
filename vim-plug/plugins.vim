@@ -26,6 +26,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   if exists('g:vscode')
     " Easy motion for VSCode
     Plug 'asvetliakov/vim-easymotion'
+    " Surround
+    Plug 'tpope/vim-surround'
   else
 
     " Sneak
@@ -94,7 +96,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " live server
     Plug 'turbio/bracey.vim'
     " Smooth scroll
-    Plug 'psliwka/vim-smoothie'
+    " Plug 'psliwka/vim-smoothie'
     " async tasks
     Plug 'skywind3000/asynctasks.vim'
     Plug 'skywind3000/asyncrun.vim'
@@ -109,6 +111,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'norcalli/nvim-colorizer.lua'
     " Rainbow brackets
     " Plug 'luochen1990/rainbow'
+    " let g:rainbow_active = 1
     " Async Linting Engine
     " TODO make sure to add ale config before plugin
     " Plug 'dense-analysis/ale'
@@ -119,16 +122,22 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'mg979/vim-visual-multi', {'branch': 'master'}
     Plug 'moll/vim-bbye'
     " Plug 'yuezk/vim-js'
-    " Plug 'maxmellon/vim-jsx-pretty'
-    " Plug 'jelera/vim-javascript-syntax'
+    Plug 'maxmellon/vim-jsx-pretty'
+    Plug 'jelera/vim-javascript-syntax'
     " Plugin Graveyard
-
+    " one dark theme
+    " Plug 'joshdick/onedark.vim'
+    "gruv theme
+    Plug 'morhetz/gruvbox'
+    " beacon
+    Plug 'danilamihailov/beacon.nvim'
+    Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
     " jsx syntax support
     " Typescript syntax
     " Plug 'HerringtonDarkholme/yats.vim'
     " Multiple Cursors
     " Plug 'terryma/vim-multiple-cursors'
-    " Plug 'kaicataldo/material.vim'
+    Plug 'kaicataldo/material.vim'
     " Plug 'NLKNguyen/papercolor-theme'
     " Plug 'tomasiser/vim-code-dark'
     " Vim Wiki
@@ -140,7 +149,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'hardcoreplayers/spaceline.vim'
     " Plug 'vim-airline/vim-airline-themes'
     " Plug 'kaicataldo/material.vim', { 'branch': 'main' }
-    " Plug 'arcticicestudio/nord-vim'
+    Plug 'arcticicestudio/nord-vim'
     " Ranger
     " Plug 'francoiscabrol/ranger.vim'
     " Plug 'rbgrouleff/bclose.vim'
@@ -151,6 +160,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'preservim/nerdcommenter'
     " Plug 'brooth/far.vim'
     " Plug 'atishay/far.vim'
+    " Javascript & Typescript
+    Plug 'pangloss/vim-javascript'
+    Plug 'leafgarland/typescript-vim'
+    Plug 'peitalin/vim-jsx-typescript'
+    Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+    Plug 'jparise/vim-graphql'
   endif
 
 call plug#end()

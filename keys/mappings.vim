@@ -76,6 +76,12 @@ else
   nnoremap <silent> <M-h>    :vertical resize -2<CR>
   nnoremap <silent> <M-l>    :vertical resize +2<CR>
 
+  " coc navigation
+  nmap <silent> gd <Plug>(coc-definition)
+  nmap <silent> gy <Plug>(coc-type-definition)
+  nmap <silent> gr <Plug>(coc-references)
+  " nmap <leader> do <Plug>(coc-codeaction)
+
 endif
 
 " Better nav for omnicomplete

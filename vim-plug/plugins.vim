@@ -38,6 +38,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-eunuch'
     " Have the file system follow you around
     Plug 'airblade/vim-rooter'
+    " Indent guides
+    Plug 'Yggdroot/indentLine'
     " auto set indent settings
     Plug 'tpope/vim-sleuth'
     " Better Syntax Support

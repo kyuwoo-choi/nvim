@@ -41,5 +41,8 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 
+" Indent guides
+let g:indentLine_char_list = ['|', '¦', '|', '┆', '|', '┊']
+
 " You can't stop me
 cmap w!! w !sudo tee %

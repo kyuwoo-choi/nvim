@@ -51,6 +51,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
     " Closetags
     Plug 'alvan/vim-closetag'
+    " Prettier
+    Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
     " Themes
     Plug 'christianchiarulli/nvcode.vim'
     " Plug 'ChristianChiarulli/nv-code'
@@ -87,7 +89,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Debugging
     " Plug 'puremourning/vimspector'
     " Better tabline
-    Plug 'mg979/vim-xtabline'
+    Plug 'mg979/vim-xtabline', { 'commit': '35466f92d44f392c88d9ccec9e9c6832e7eebae9' }
     " undo time travel
     Plug 'mbbill/undotree'
     " Find and replace
@@ -112,8 +114,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Colorizer
     Plug 'norcalli/nvim-colorizer.lua'
     " Rainbow brackets
-    " Plug 'luochen1990/rainbow'
-    " let g:rainbow_active = 1
+    Plug 'luochen1990/rainbow'
+    let g:rainbow_active = 1
     " Async Linting Engine
     " TODO make sure to add ale config before plugin
     " Plug 'dense-analysis/ale'
@@ -129,6 +131,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plugin Graveyard
     " one dark theme
     " Plug 'joshdick/onedark.vim'
+    "nightfly themne
+    Plug 'kyuwoo-choi/vim-nightfly-guicolors'
     "gruv theme
     Plug 'morhetz/gruvbox'
     " beacon
@@ -166,7 +170,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'pangloss/vim-javascript'
     Plug 'leafgarland/typescript-vim'
     Plug 'peitalin/vim-jsx-typescript'
-    Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+    " Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
     Plug 'jparise/vim-graphql'
   endif
 

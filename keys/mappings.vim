@@ -80,6 +80,7 @@ else
   nmap <silent> gd <Plug>(coc-definition)
   nmap <silent> gy <Plug>(coc-type-definition)
   nmap <silent> gr <Plug>(coc-references)
+  nmap <silent> rn <Plug>(coc-rename)
   " nmap <leader> do <Plug>(coc-codeaction)
 
 endif

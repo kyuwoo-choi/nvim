@@ -26,12 +26,12 @@ else
   source $HOME/.config/nvim/themes/syntax.vim
   source $HOME/.config/nvim/themes/nvcode.vim
   source $HOME/.config/nvim/themes/airline.vim
-  source $HOME/.config/nvim/themes/gruvbox.vim
+  source $HOME/.config/nvim/themes/nightfly.vim
 
   " Plugin Configuration
   source $HOME/.config/nvim/keys/which-key.vim
   source $HOME/.config/nvim/plug-config/vim-commentary.vim
-  " source $HOME/.config/nvim/plug-config/rainbow.vim
+  source $HOME/.config/nvim/plug-config/rainbow.vim
   source $HOME/.config/nvim/plug-config/rnvimr.vim
   source $HOME/.config/nvim/plug-config/better-whitespace.vim
   source $HOME/.config/nvim/plug-config/fzf.vim
@@ -55,6 +55,7 @@ else
   source $HOME/.config/nvim/plug-config/asynctask.vim
   source $HOME/.config/nvim/plug-config/window-swap.vim
   source $HOME/.config/nvim/plug-config/markdown-preview.vim
+  source $HOME/.config/nvim/plug-config/prettier.vim
   luafile $HOME/.config/nvim/lua/plug-colorizer.lua
   " source $HOME/.config/nvim/plug-config/vimspector.vim " Uncomment if you want to use Vimspector
   " source $HOME/.config/nvim/plug-config/ale.vim
@@ -68,3 +69,4 @@ endif
 " Better nav for omnicomplete TODO figure out why this is being overridden
 inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
+

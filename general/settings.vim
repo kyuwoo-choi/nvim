@@ -41,8 +41,21 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 
+
 " Indent guides
 let g:indentLine_char_list = ['|', '¦', '|', '┆', '|', '┊']
 
 " You can't stop me
 cmap w!! w !sudo tee %
+
+let g:coc_global_extensions = get(g:, 'coc_global_extensions', [])
+
+" prettier conditional load
+if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
+  let g:coc_global_extensions += ['coc-prettier']
+endif
+
+" eslint conditional load
+if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
+  let g:coc_global_extensions += ['coc-eslint']
+endif
